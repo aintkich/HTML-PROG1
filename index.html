@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> XYZ Hotel - Welcome</title>
+        <style>
+            body {
+                background-color: #f4f4f4;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                
+            }
+            header {
+                background-color: darkblue;
+                color: white;
+                padding: 20px;
+            }
+            h1 {
+                color: skyblue;
+            }
+            p {
+                font-size: 18px;
+                color: #333;
+            }
+            ul, ol {
+                display: inline-block;
+                text-align: left;
+                padding-left: 20px;
+            }
+            nav ul { /* navigation bar styling */
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            nav ul li {
+                float: left;
+            }
+            nav ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                width: 120px;
+                text-decoration: none;
+            }
+            nav ul li a:hover {
+                background-color: #111;
+            }
+            .rooms-section {
+                background-color: #fff;
+                padding: 20px;
+                margin: 20px auto;
+                width: 80%;
+                border-radius: 10px;
+            }
+            .reservation-section {
+                background-color: #f9f9f9;
+                padding: 20px;
+                margin: 20px auto;
+                border-radius: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section id="home"></section>
+        <header>
+        <h1>Welcome to XYZ Hotel</h1>
+        <h2>Your Comfort is Our Priority</h2>
+        <h3>Luxury | Comfort | Affordability</h3>
+        </header>
+        <p>
+            XYZ Hotel is located in the heart of the city.
+            We provide world-class accommodation, excellent service, and a relaxing environtment for both business and leisure travelers.
+        </p>
+        <hr>
+        <p>
+            Located at: 123 Sunset Boulevard <br>
+            City Center, Metro City <br>
+            Philippines
+        </p>
+    
+    
+    <p>
+        We offer <b>luxurious rooms</b>, 
+        <i>excellent dining</i>, and
+        <u>24/7 customer service</u>. 
+        Our guests can enjoy <strong>premium comfort</strong>
+        and <em>unmatched hospitality</em>
+    </p>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#location">Visit Us</a></li>
+            <li><a href="#booking">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <section id="services">
+    <h2>Our Services</h2>
+    </section>
+    <ul>
+        <li>Free Wi-Fi</li>
+        <li>Swimming Pool</li>
+        <li>Fitness Gym</li>
+        <li>Spa and Wellness Center</li>
+        <li>Airport Shuttle</li>
+    </ul>
+
+    <div class="rooms-section">
+        <h2>Room Rates</h2>
+        <table border="1" width="70%" align="center">
+            <tr>
+                <th>Room Type</th>
+                <th>Description</th>
+                <th>Price Per Night</th>
+            </tr>
+            <tr>
+                <td>Standard Room</td>
+                <td>Good for 2 persons</td>
+                <td>₱2,500</td>
+            </tr>
+            <tr>
+                <td>Deluxe Room</td>
+                <td>With balcony and city view</td>
+                <td>₱3,800</td>
+            </tr>
+            <tr>
+                <td>Family Suite</td>
+                <td>Good for 4 persons</td>
+                <td>₱5,000</td>
+            </tr>
+        </table>
+    </div>
+    <p>
+        <Book today and enjoy a <span style="color:red; font-weight:bold;">20% discount</span>for early reservations
+    </p>
+
+    <h2>How to book</h2>
+    <ol>
+        <li>Choose your room type</li>
+        <li>Select check-in and check-out date</li>
+        <li>Fill in your personal details</li>
+        <li>Confirm payment</li>
+    </ol>
+
+    <section id="about">
+    <h2>Our Hotel</h2>
+    </section>
+    <img src="outdoor1.jpg" alt="XYZ Hotel Building" width="400">
+
+    <h2>Hotel Tour Video</h2>
+    <video width="600" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Relaxing Music in Our Lobby</h2>
+    <audio controls>
+        <source src="audio.mp4" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        Your browser does not support the audio.
+    </audio>
+
+    <section id="booking"></section>
+    <div class="reservation-section">
+        <h2>Book a Room</h2>
+            <form style="background-color: #87ceeb; padding: 20px; margin: 20px auto; border-radius: 10px;">
+                <label>Full Name:</label><br>
+                <input type="text" name="fullname" size="40" required><br><br>
+                <label>Email Address:</label><br>
+                <input type="email" name="email" size="40" required><br><br>
+                <label>Check-in Date:</label><br>
+                <input type="date" name="checkin" size="40" required><br><br>
+                <label>Check-out Date:</label><br>
+                <input type="date" name="checkout" size="40" required><br><br>
+                <label>Room Type:</label><br>
+                <select>
+                    <option>Standard Room</option>
+                    <option>Deluxe Room</option>
+                    <option>Family Suite</option>
+                </select>
+                <br><br>
+
+                <label>Additional Requests:</label><br>
+                <textarea rows="4" cols="40"></textarea>
+                <br><br>
+                <input type="submit" value="Submit Reservation">
+
+            </form>
+    </div>
+    
+
+    <section id="location">
+    <h2>Our Location</h2>
+    </section>
+
+    <p>
+        <a href="https://www.google.com" target="_blank">
+            <iframe 
+                src="https://www.google.com/maps?q=Naic,Cavite&output=embed" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                >
+            </iframe>
+            <br><br>
+            Visit Our Location on Google Maps
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.facebook.com" target="_blank">
+            Visit Our Facebook Page
+        </a>
+    </p>
+    </body>
+
+    <footer style="background-color: lightslategray; color: black; padding: 20px; margin-top: 20px;">
+        <p>&copy; 2026 XYZ Hotel. All rights reserved.</p>
+    </footer>
+</html>
